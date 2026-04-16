@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Menu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:600;
+}
+
+.search-box{
+    width:40%;
+}
+
+.search-box input{
+    width:100%;
+    padding:10px 15px;
+    border:none;
+    border-radius:25px;
+    outline:none;
+    font-size:14px;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    opacity:0.8;
+}
+
+/* CATEGORY */
+.categories{
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+    padding:20px;
+}
+
+.categories button{
+    background:#ffffff20;
+    border:none;
+    padding:10px 18px;
+    border-radius:20px;
+    color:#fff;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.categories button:hover{
+    background:#ff6b6b;
+}
+
+/* GRID */
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+/* CARD */
+.card{
+    background: rgba(255,255,255,0.1);
+    border-radius:15px;
+    overflow:hidden;
+    backdrop-filter: blur(10px);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:15px;
+}
+
+.card-body h3{
+    font-size:18px;
+}
+
+.card-body p{
+    font-size:13px;
+    opacity:0.7;
+    margin:5px 0;
+}
+
+.price{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:10px;
+}
+
+.price span{
+    font-weight:600;
+}
+
+.btn{
+    background:#ff6b6b;
+    border:none;
+    padding:6px 12px;
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    opacity:0.6;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    .search-box{
+        width:60%;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+</header>
+
+<div class="hero">
+    <h1>Find Your Favorite Food</h1>
+    <p>Delicious meals at your fingertips</p>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <img src="/chicken-biriyani.png">
+        <div class="card-body">
+            <h3>Chicken Biryani</h3>
+            <p>Spicy & flavorful rice dish</p>
+            <div class="price">
+                <span>₹120</span>
+                <button class="btn">Order</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/pizza.png">
+        <div class="card-body">
+            <h3>Cheese Pizza</h3>
+            <p>Loaded with extra cheese</p>
+            <div class="price">
+                <span>₹150</span>
+                <button class="btn">Order</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/Classic Burger.png">
+        <div class="card-body">
+            <h3>Classic Burger</h3>
+            <p>Crispy & juicy burger</p>
+            <div class="price">
+                <span>₹90</span>
+                <button class="btn">Order</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 FoodHub | Designed professionally
+</footer>
+
+</body>
+</html>
+```
